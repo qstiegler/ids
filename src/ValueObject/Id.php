@@ -17,9 +17,9 @@ abstract class Id implements \Stringable
     final public function __construct(
         protected string $value,
     ) {
-        if (!Uuid::isValid($value)) {
-            throw new InvalidId($value);
-        }
+//        if (!Uuid::isValid($value)) {
+//            throw new InvalidId($value);
+//        }
     }
 
     final public static function generateRandom(): static

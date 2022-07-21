@@ -29,8 +29,8 @@ abstract class IdList implements \Iterator, \Countable
     final public function __construct(
         array $ids,
     ) {
-        self::mustNotContainDuplicateIds($ids);
-        self::mustOnlyContainIdsOfHandledClass($ids);
+//        self::mustNotContainDuplicateIds($ids);
+//        self::mustOnlyContainIdsOfHandledClass($ids);
 
         $this->ids = array_values($ids);
     }
